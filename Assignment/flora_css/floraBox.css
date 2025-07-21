@@ -1,0 +1,29 @@
+/**/
+.introContainer{
+    position: relative;
+    display: flex; /* Displays the container as a flex container */
+    align-items: center;
+    height: 450px; /* Sets the height of the container */
+}
+
+.introLeft{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+.introLeft img{
+    height: 440px;
+    object-fit: contain;
+    max-width: 100%; /*ensure when we zoom the content dint flip with other*/
+    max-height: 100%; /*ensure when we zoom the content dint flip with other*/
+
+}
+.introRight{
+    flex: 1;
+    padding: 0 20px; /* Add some padding for spacing between image and text */
+    line-height: 2.0; /* Increase the line height */
+    max-width: 100%; /*ensure when we zoom the content dint flip with other*/
+    max-height: 100%; /*ensure when we zoom the content dint flip with other*/
+
+}

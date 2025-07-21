@@ -1,0 +1,17 @@
+body {
+    background-color: #f0f0f0;
+    /* Default background color */
+}
+
+/* Additional CSS for different backgrounds */
+body.blue-background {
+    background-color: #3498db;
+}
+
+body.green-background {
+    background-color: #2ecc71;
+}
+
+body.red-background {
+    background-color: #e74c3c;
+}

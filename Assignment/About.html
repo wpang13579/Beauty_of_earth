@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>The beauty of Earth</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script src="js/add.js" async></script>
+
+    <!-- Include jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Facebook JavaScript SDK -->
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"></script>
+
+
+
+    <!-- for background -->
+    <link rel="stylesheet" href="flora_css/backgroundFlowering.css">
+
+</head>
+
+<body style="color: black;">
+
+    <video autoplay muted loop id="video-background">
+        <source src="Flora_image/BackgroundAbout.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/Earth.jpg" class="logo" alt=""></a>
+                </div>
+                <!-- End Header Navigation -->
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Earth
+                                Introduce</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="FloraWelcomPage.html">Flora</a></li>
+                                <li><a href="SeasonWelcomPage.html">Season</a></li>
+                                <li><a href="oceanWelcomePage.html">Ocean</a></li>
+                                <li><a href="animalWelcomePage.html">Animal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Your HTML content for the About Us page goes here -->
+    <h1 class="text-center">About Us</h1>
+    <br>
+
+    <h2 class="text-center">Mission Statement</h2>
+    <div class="container">
+        <pc class="text-center">In this Assignment, we are passionate about raising awareness and promoting
+            appreciation
+            for the beauty
+            and
+            importance of our planet Earth. Our mission is to collaboratively explore and showcase the wonders of our
+            world
+            through
+            academic projects that inspire love, respect, and stewardship for the environment.</p>
+
+    </div>
+
+    <br>
+
+    <h2 class="text-center">Our Approach</h2>
+
+    <div class="container">
+        <pc class="text-center">We believe that by sharing knowledge, fostering appreciation, and advocating for
+            positive
+            change, we can make a
+            difference in the protection of our planet. Through collaborative efforts and a shared commitment to
+            environmental
+            stewardship, we strive to create a brighter and more sustainable future for all.</p>
+
+    </div>
+
+    <br>
+
+    <h2 class="text-center">Our Team</h2>
+
+    <div class="container">
+        <p class="text-center">
+            Member1: Tan Wen Pang <br><br>
+
+            Member2: Lee Yong Wei<br><br>
+
+            Member3: Lee Zhan Yi<br><br>
+
+            Member4: Ng Jun Hao<br><br>
+        </p>
+    </div>
+
+    <br><br><br>
+
+    <h2 class="text-center">Disclaimer</h2>
+    <div class="container">
+        <p class="text-center">This assignment is a student project created for academic purposes. All content
+            and
+            information provided
+            on
+            this
+            website are for educational use only.</p>
+
+        <br>
+    </div>
+
+    <br><br>
+    <h3 class="text-center">u can click here to share our webpage, thank you!</h3>
+
+    <!-- Facebook share button -->
+    <div class="container" style="align-items: right;">
+        <div class="fb-share-button" data-href="http://127.0.0.2:5501index.html" data-layout="button_count">
+        </div>
+
+    </div>
+
+    <!-- Script for AJAX request -->
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: 'your_api_endpoint',
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (xhr, status, error) {
+                    console.error(status, error);
+                }
+            });
+        });
+    </script>
+
+
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/googlemap.js"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj2x4PwmyJAece5Qvh7vY2pNiaRuDsELk&callback=initMap"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Sea section styles */
+/* Sea section styles for 2 by 2 layout */
+.sea-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    padding: 0 100px; /* Add left and right padding */
+}
+
+
+.sea {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sea h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.sea p {
+    color: #666;
+}
+
+.sea img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}

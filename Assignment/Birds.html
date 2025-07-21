@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap version v5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="birdstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> <!--style-->
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Merienda:wght@300..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .nav-link:hover,
+        .nav-link:active,
+        .nav-link.active {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="animal.images/background2.mp4" type="video/mp4">
+        <!-- Add more <source> elements for different video formats -->
+    </video>
+    <!-- nav bar start-->
+    <div style="background-color: aliceblue">
+        <header class="d-flex flex-wrap align-items-center justify-content-between py-3 ">
+            <div class="col-md-3 mb-2 mb-md-0 order-md-first ps-md-3">
+                <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img style="height: 80px;width: 80px;" src="images/Earth.jpg" class="rounded">
+                </a>
+            </div>
+            <div class="col-7">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ps-md-3">
+                    <li><a href="index.html" class="nav-link px-2 link-secondary fs-5 me-md-4 text-black">Home</a>
+                    </li>
+                    <li><a href="Flora.html" class="nav-link active px-2 fs-5 me-md-4 text-black">Flora</a></li>
+                    <li><a href="Season.html" class="nav-link px-2 fs-5 me-md-4 text-black">Seasons</a></li>
+                    <li><a href="Animal.html" class="nav-link px-2 fs-5 me-md-4 text-black">Animal</a></li>
+                    <li><a href="ocean.html" class="nav-link px-2 fs-5 text-black">Ocean</a></li>
+                </ul>
+            </div>
+
+        </header>
+    </div>
+
+    <!-- intro content -->
+    <div class="intro-container">
+        <div class="intro-desc"> <!--left side-->
+
+            <h1>The Birds</h1>
+
+            <p>Birds are feathered, warm-blooded vertebrates characterized by their ability to fly (although some
+                species are flightless)
+                and their beaked jaws. They exhibit a remarkable diversity in size, color, habitat, and behavior. Birds
+                have lightweight,
+                hollow bones that aid in flight, and their feathers serve various purposes including insulation,
+                waterproofing,and display.
+                They lay hard-shelled eggs and typically possess a highly developed sense of sight and hearing.Birds are
+                found in nearly
+                all ecosystems worldwide, from polar regions to tropical rainforests, and they play vital roles in
+                ecosystems as
+                pollinators, seed dispersers, pest controllers, and indicators of environmental health. Their diets vary
+                greatly, with
+                some species being carnivorous, others herbivorous, and many being omnivorous.
+            </p>
+        </div>
+
+        <div class="intro-picture"> <!--right side-->
+            <img src="animal.images/animal.jpg">
+        </div>
+
+    </div>
+
+    <!-- nav bar end-->
+
+    <!-- -----------------------------------------------------The Hornbill ----------------------------------------------------------->
+    <div class="imgbody">
+
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="horn-radio-btn" id="horn_radio1">
+                <input type="radio" name="horn-radio-btn" id="horn_radio2">
+                <input type="radio" name="horn-radio-btn" id="horn_radio3">
+                <input type="radio" name="horn-radio-btn" id="horn_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/horn1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/horn2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/horn3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/horn4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+
+
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="horn_radio1" class="manual-btn"></label>
+                <label for="horn_radio2" class="manual-btn"></label>
+                <label for="horn_radio3" class="manual-btn"></label>
+                <label for="horn_radio4" class="manual-btn"></label>
+
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Hornbill</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Hornbills are a family of large, distinctive birds known for their unique bill shapes and casques,
+                    which are often
+                    brightly colored and used for display and resonance. Found in tropical and subtropical regions of
+                    Africa, Asia, and
+                    Melanesia, hornbills inhabit forests and woodlands. They are primarily frugivorous, feeding on
+                    fruits, but also consume
+                    insects, small vertebrates, and occasionally carrion. Hornbills are known for their intricate
+                    nesting habits, with
+                    females sealing themselves inside tree cavities during incubation, relying on the males to provide
+                    food. These birds
+                    play important ecological roles as seed dispersers and are culturally significant in many indigenous
+                    traditions.
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br><br>
+
+    <!-- -----------------------------------------------------The Ostrich ----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="ost-radio-btn" id="ost_radio1">
+                <input type="radio" name="ost-radio-btn" id="ost_radio2">
+                <input type="radio" name="ost-radio-btn" id="ost_radio3">
+                <input type="radio" name="ost-radio-btn" id="ost_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/ost img1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/ost img2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/ost img3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/ost img4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="ost_radio1" class="manual-btn"></label>
+                <label for="ost_radio2" class="manual-btn"></label>
+                <label for="ost_radio3" class="manual-btn"></label>
+                <label for="ost_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Ostrich</h1>
+                <p style="border-style: solid; padding:20px;">
+                    The ostrich is the largest bird in the world, native to Africa. It is flightless but possesses
+                    powerful legs,
+                    allowing it to run at speeds of up to 70 kilometers per hour (43 miles per hour), making it the
+                    fastest bird on
+                    land. Ostriches have long necks and legs, with distinctive large eyes and a small head. They are
+                    primarily
+                    herbivorous, feeding on plants, seeds, and occasionally insects and small animals.Ostriches are
+                    well-adapted to
+                    their arid habitats, with specialized physiological features like efficient water conservation
+                    mechanisms. They are
+                    also known for their unique reproductive behavior, where a dominant male defends a harem of females
+                    and their eggs.
+                    Ostrich eggs are the largest of any bird species, with a thick shell that can support the weight of
+                    an adult human.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+    <!-- -----------------------------------------------------The Kingfisher ----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="kin-radio-btn" id="kin_radio1">
+                <input type="radio" name="kin-radio-btn" id="kin_radio2">
+                <input type="radio" name="kin-radio-btn" id="kin_radio3">
+                <input type="radio" name="kin-radio-btn" id="kin_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/kin img1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/kin img2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/kin img3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/kin img4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="kin_radio1" class="manual-btn"></label>
+                <label for="kin_radio2" class="manual-btn"></label>
+                <label for="kin_radio3" class="manual-btn"></label>
+                <label for="kin_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Kingfisher</h1>
+                <p style="border-style: solid; padding:20px;">
+                    The kingfisher is a small to medium-sized bird known for its vibrant plumage, typically featuring
+                    shades of blue,
+                    green, and orange. Found worldwide, they inhabit a variety of aquatic environments such as rivers,
+                    streams, lakes,
+                    and coastal areas. Kingfishers are skilled hunters, feeding primarily on fish but also catching
+                    insects and
+                    crustaceans.These birds have a distinctive hunting technique, where they perch on branches or other
+                    vantage
+                    points overlooking water, then dive swiftly to catch prey with their sharp, pointed bills. They are
+                    excellent
+                    swimmers and can also hover briefly over water before diving.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br>
+
+
+    <!-- -----------------------------------------------------The Parrot ----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="pat-radio-btn" id="pat_radio1">
+                <input type="radio" name="pat-radio-btn" id="pat_radio2">
+                <input type="radio" name="pat-radio-btn" id="pat_radio3">
+                <input type="radio" name="pat-radio-btn" id="pat_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/pat img1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/pat img2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/pat img3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/pat img4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="pat_radio1" class="manual-btn"></label>
+                <label for="pat_radio2" class="manual-btn"></label>
+                <label for="pat_radio3" class="manual-btn"></label>
+                <label for="pat_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Parrot</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Parrots are colorful, intelligent birds belonging to the family Psittacidae, known for their
+                    distinctive features
+                    such as a curved beak, strong feet with two toes pointing forward and two pointing backward, and the
+                    ability to
+                    mimic sounds. They are found in tropical and subtropical regions worldwide.These birds exhibit a
+                    diverse range of
+                    sizes, colors, and behaviors, from the tiny budgerigar to the large macaws and cockatoos. Parrots
+                    are highly
+                    social creatures, often forming strong bonds with their human caretakers or flock members in the
+                    wild.
+                </p>
+                <br><br><br>
+                <!---------------------Video iframe  --------------------------------->
+                <div class="video-container">
+                    <iframe width="100%" height="500"
+                        src="https://www.youtube.com/embed/twJaTtWxKCc?si=XTVA8FJjzgGKjl8X" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                             encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br><br><br>
+                <!--------------------------------Button----------------------------------->
+                <div class="container mt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <!-- Previous Button  -->
+                            <a href="Mammals.html" class="btn custom-btn prev-btn">&laquo; Previous</a>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Next Button -->
+                            <a href="Reptiles.html" class="btn custom-btn next-btn">Next &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br>
+
+
+    <!-- scripting for img automation -->
+    <script>
+        var horncount = 1;
+        setInterval(function () {
+            document.getElementById('horn_radio' + horncount).checked = true;
+            horncount++;
+            if (horncount > 4) {
+                horncount = 1;
+            }
+        }, 5000);
+
+        // Ostrich Slider
+        var ostcount = 1;
+        setInterval(function () {
+            document.getElementById('ost_radio' + ostcount).checked = true;
+            ostcount++;
+            if (ostcount > 4) {
+                ostcount = 1;
+            }
+        }, 5000);
+
+        // Kingfisher Slider
+        var kincount = 1;
+        setInterval(function () {
+            document.getElementById('kin_radio' + kincount).checked = true;
+            kincount++;
+            if (kincount > 4) {
+                kincount = 1;
+            }
+        }, 5000);
+
+        // Parrot Slider
+        var patcount = 1;
+        setInterval(function () {
+            document.getElementById('pat_radio' + patcount).checked = true;
+            patcount++;
+            if (patcount > 4) {
+                patcount = 1;
+            }
+        }, 5000);
+    </script>
+
+</body>
+
+</html>

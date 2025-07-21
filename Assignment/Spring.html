@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>The beauty of Earth</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/add.js" async></script>
+    <style>
+        .Section_top {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            text-align: center;
+            justify-content: center;
+            animation: change 10s infinite ease-in-out;
+            background-image: url(images/image.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .Section_top::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.263);
+            /* Adjust the last value (alpha) to control darkness */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+
+        }
+
+        .content h1 {
+            color: #fff;
+            font-size: 60px;
+            letter-spacing: 15px;
+        }
+
+        .content h1 span {
+            color: #111;
+        }
+
+        .content a {
+            background: #85c1ee;
+            padding: 10px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .content a:hover {
+            background: #ffffff;
+            color: #fff;
+        }
+
+        @keyframes change {
+            0% {
+                background-image: url(images/img1.jpg);
+            }
+
+            20% {
+                background-image: url(images/img2.jpg);
+            }
+
+            40% {
+                background-image: url(images/image.jpg);
+            }
+
+            60% {
+                background-image: url(images/img4.jpg);
+            }
+
+            80% {
+                background-image: url(images/img5.jpg);
+            }
+
+            100% {
+                background-image: url(images/img1.jpg);
+            }
+        }
+
+        .container2 {
+            width: 300px;
+            height: 400px;
+            perspective: 800px;
+        }
+
+        .container2:hover>.card {
+            cursor: pointer;
+            transform: rotateY(180deg);
+        }
+
+        .card {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transition: transform 1500ms;
+            transform-style: preserve-3d;
+        }
+
+        .front,
+        .back {
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+            box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .front {
+            background-image: url(images/JCC-2022-1-1.png);
+        }
+
+        .back {
+            background-color: #c2ec6e;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            font-family: "Roboto", "Helvetica", sans-serif;
+        }
+
+        h1 {
+            color: rgb(225, 223, 223);
+            /* White text color for the header */
+            font-size: 30px;
+            /* Larger font size for the header */
+            margin: 0;
+            /* Remove default margin to align header text at the top */
+        }
+
+        h2 {
+            font-size: 25px;
+            line-height: 1.5;
+            color: rgb(246, 246, 246);
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: rgb(243, 255, 255);
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            /* Add rounded corners to images */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins' sans-serif;
+        }
+
+        .gallery {
+            width: 900px;
+            display: flex;
+            overflow-x: scroll;
+        }
+
+        .gallery div {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+            padding: 10px;
+            flex: none;
+
+        }
+
+        .gallery div img {
+            width: 100%;
+            filter: grayscale(100%);
+            transition: transform 0.5s;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            /* Ensure images don't exceed the width of their container */
+            height: auto;
+            /* Maintain aspect ratio */
+
+        }
+
+        .gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10% auto;
+        }
+
+        #backbtn,
+        #nextbtn {
+            width: 50px;
+            cursor: pointer;
+            margin: 40px;
+        }
+
+        .gallery div img:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            /* Vertically align content */
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px #888;
+        }
+
+        img {
+            max-width: 30%;
+            /* Adjust the width percentage as needed */
+            height: auto;
+            margin-right: 30px;
+            /* Create space between the image and text */
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .text {
+            flex: 1;
+            /* Allow the text to expand and take up available space */
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        /* In sheet.css or within a <style> block in the HTML file */
+        #goBackContainer {
+            text-align: center;
+            /* Center the button horizontally */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            /* Optional: Add a background color for better visibility */
+            padding: 10px 0;
+            /* Optional: Add padding for better button appearance */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/Earth.jpg" class="logo" alt="" alt=""
+                            width="80px" height="80px"></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Flora.html">Flora</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Season.html">Seasons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Animal.html">Animal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ocean.html">Ocean</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+            </div>
+        </nav>
+    </header>
+    <!-- End Navigation -->
+
+    <div class="Section_top">
+        <h1 style="text-align: center;"><b><u><strong>SPRING</strong></u></b></h1>
+        <div class="gif-container">
+            <img src="images/d1dd78_e61d58e9efe54cd5878b79620cea2da1~mv2.gif" alt="Hello Spring">
+        </div>
+
+        <div class="item">
+            <div class="text">
+                <p>Spring is one of the four temperate seasons, following winter and preceding summer. It is
+                    characterized
+                    by blooming flowers, budding trees, and warmer temperatures. In the Northern Hemisphere, spring
+                    typically begins around March 20th or 21st and ends around June 20th or 21st. During spring, plants
+                    emerge from dormancy, animals awaken from hibernation, and the length of daylight increases. It's
+                    often
+                    associated with rejuvenation, growth, and renewal in nature.
+                </p>
+            </div>
+
+
+            <div class="container2">
+                <div class="card">
+                    <div class="front"></div>
+                    <div class="back">
+                        <div class="text">
+                            <h3><b><u>❄️Spring Cleaning Tips🌼</u></b></h3>
+                            <p>Spring is often associated with cleaning and decluttering after the winter months. You
+                                can
+                                provide tips on how to effectively spring clean different areas of the house, such as
+                                organizing closets, deep cleaning the kitchen, and decluttering living spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-box-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video_css">
+                            <video controls autoplay loop src="images/spring.mp4" type="video/mp4" width="500px">
+                                Sry your browser does not support
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="noo-sh-title-top"><u><span>Exploring the Beauty of Spring</u></span></h2>
+                        <p>Experience spring's bounty with us! We showcase seasonal delights from outdoor markets and
+                            deliver them to your doorstep via top delivery services. Whether adapting to safety measures
+                            or juggling remote work, let us make spring dining hassle-free. Embrace the season's
+                            freshness with ease!
+                        </p>
+                        <p>Amidst spring's blooms and breezes, let us simplify your dining decisions. Whether navigating
+                            regulations or work-from-home routines, count on us for culinary assistance. Embrace
+                            spring's vitality effortlessly!!</p>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-block-inner">
+                            <h3>Nature's Trust
+                            </h3>
+                            <p>Our platform embodies the trustworthiness of nature's beauty, reflecting reliability in
+                                every aspect of our service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-block-inner">
+                            <h3>Effortless Splendor</h3>
+                            <p>Experience the efficiency of spring's elegance, where every interaction is swift and
+                                seamless.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-block-inner">
+                            <h3>Blossoming Expertise</h3>
+                            <p>Our platform is crafted with expertise akin to the delicate artistry of spring blooms,
+                                nurtured by skilled hands. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 style="text-align: center;"><b><u>Popular Activities During Spring</u></b></h1>
+            <h3 style="text-align: center;">
+                <p>Here are some pictures and introduction that related to the activities can held during 🌷Spring!!!
+                </p>
+
+                <div class="gallery-wrap">
+                    <img src="images/back.png" id="backbtn">
+                    <div class="gallery">
+                        <div>
+
+                            <span><img src="images/shutterstock_1501433546-scaled.jpg"></span>
+                            <span><img src="images/download.jpeg"></span>
+                        </div>
+                        <div>
+                            <span><img src="images/istockphoto-157481806-612x612.jpg"></span>
+                            <span><img src="images/springgardens-157482648-230908-gt.-720x405.jpg"></span>
+                        </div>
+                        <div>
+                            <span><img
+                                    src="images/1440x810_cmsv2_8dab787d-afc6-5712-be28-007d42f38fc3-5832608.jpg"></span>
+                            <span><img src="images/A-group-of-hikers-on-a-hike-during-spring-season.jpg"></span>
+                        </div>
+
+                    </div>
+                    <img src="images/next.png" id="nextbtn">
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <h2><strong>Picnic :</strong></h2>
+                        <br>
+                        <p>Spring beckons for delightful picnics amidst the picturesque settings of parks or
+                            green spaces. Spread out a cozy blanket under the shade of blossoming trees, and indulge in
+                            a
+                            delectable
+                            feast of homemade treats. Enjoy the simple pleasures of good company, laughter, and basking
+                            in the
+                            warmth of the spring sun. It's the perfect opportunity to unwind and create cherished
+                            memories with
+                            loved ones.
+                        </p>
+                        <br>
+                        <h2><strong>Outdoor Exploration :</strong></h2>
+                        <br>
+                        <p> Another delightful activity during the spring season is embarking on outdoor adventures,
+                            such
+                            as
+                            exploring nature trails or wandering through parks and forests. Revel in the kaleidoscope of
+                            colors
+                            as
+                            flowers bloom, listen to the melodious tunes of birds, and feel the gentle caress of the
+                            spring
+                            breeze.
+                            Carrying a backpack filled with snacks, refreshing beverages, and a delightful picnic lunch
+                            adds to
+                            the
+                            allure of these outdoor escapades.
+                        </p>
+                        <br>
+                        <h2><strong>Botanical Garden Exploration :</strong></h2>
+                        <br>
+                        <p> Spring unveils the splendor of botanical gardens, where a captivating array of flowers and
+                            plants
+                            come to life in a vibrant display of colors and scents. Embark on a leisurely stroll along
+                            meandering
+                            pathways, admiring the intricate beauty of each botanical specimen. Take in the tranquility
+                            of the
+                            surroundings and revel in the opportunity to reconnect with nature's wonders. Don't forget
+                            to pack a
+                            picnic basket filled with delicious snacks and refreshing beverages to enjoy amidst the
+                            enchanting
+                            ambiance of the garden.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="categories-earth">
+                    <div class="container">
+                        <div class="text">
+                            <h1><u><strong>🌷 Springtime Adventures Await! Join Us for Outdoor Fun! 🌷 </u></strong>
+                            </h1>
+                            <p>Hey there, nature enthusiasts! Eager to immerse yourself in the wonders of spring? In our
+                                upcoming guide, we've curated three delightful activities to fully embrace this lively
+                                season.
+                                From tranquil strolls through blooming gardens to rejuvenating outdoor yoga sessions,
+                                there's an experience tailored just for you. Additionally, we'll unveil enchanting
+                                destinations like arboretums and flower festivals, brimming with the vibrant colors of
+                                spring.
+                                Don't let spring's magic pass you by—click below to explore more captivating
+                                spring-related destinations! 🌼🍃🌸
+                            </p>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="shop-cat-box">
+                                    <img class="img-fluid" src="images/shutterstock_1501433546-scaled.jpg"
+                                        alt="Picnic" />
+                                    <a class="btn hvr-hover"
+                                        href="https://www.realsimple.com/work-life/entertainment/spring-activities">Picnics</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="shop-cat-box">
+                                    <img class="img-fluid" src="images/65df610c3207f.image.jpg"
+                                        alt="Outdoor Exploration" />
+                                    <a class="btn hvr-hover"
+                                        href="https://www.pinterest.com/k12inc/spring-activities/">Outdoor
+                                        Exploration</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="shop-cat-box">
+                                    <img class="img-fluid" src="images/istockphoto-157481806-612x612.jpg"
+                                        alt="Botanical Garden Exploration" />
+                                    <a class="btn hvr-hover"
+                                        href="https://happytotshelf.com/spring-activities/">Botanical Garden
+                                        Exploration</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+                <section>
+                    <!-- "Go Back" button wrapped in a <div> for positioning -->
+                    <div id="goBackContainer">
+                        <button id="goBackButton">Go Back</button>
+                    </div>
+                </section>
+
+                <div class="elfsight-app-871c8141-9444-4a50-8c8c-45730388dd0e" data-elfsight-app-lazy></div>
+
+                <!-- ALL JS FILES -->
+                <script src="js/jquery-3.5.1.min.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <!-- ALL PLUGINS -->
+                <script src="js/jquery.superslides.min.js"></script>
+                <script src="js/bootstrap-select.js"></script>
+                <script src="js/inewsticker.js"></script>
+                <script src="js/bootsnav.js."></script>
+                <script src="js/images-loded.min.js"></script>
+                <script src="js/isotope.min.js"></script>
+                <script src="js/owl.carousel.min.js"></script>
+                <script src="js/baguetteBox.min.js"></script>
+                <script src="js/form-validator.min.js"></script>
+                <script src="js/contact-form-script.js"></script>
+                <script src="js/custom.js"></script>
+                <script src="js/googlemap.js"></script>
+                <script defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj2x4PwmyJAece5Qvh7vY2pNiaRuDsELk&callback=initMap"></script>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <script src="script.js">
+                </script>
+
+</body>

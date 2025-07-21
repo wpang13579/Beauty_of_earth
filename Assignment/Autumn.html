@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>The beauty of Earth</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/add.js" async></script>
+    <style>
+        .Section_top {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            text-align: center;
+            justify-content: center;
+            animation: change 10s infinite ease-in-out;
+            background-image: url(images/image.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .Section_top::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.263);
+            /* Adjust the last value (alpha) to control darkness */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+
+        }
+
+        .content h1 {
+            color: #fff;
+            font-size: 60px;
+            letter-spacing: 15px;
+        }
+
+        .content h1 span {
+            color: #111;
+        }
+
+        .content a {
+            background: #85c1ee;
+            padding: 10px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .content a:hover {
+            background: #ffffff;
+            color: #fff;
+        }
+
+        @keyframes change {
+            0% {
+                background-image: url(images/img1.jpg);
+            }
+
+            20% {
+                background-image: url(images/img2.jpg);
+            }
+
+            40% {
+                background-image: url(images/image.jpg);
+            }
+
+            60% {
+                background-image: url(images/img4.jpg);
+            }
+
+            80% {
+                background-image: url(images/img5.jpg);
+            }
+
+            100% {
+                background-image: url(images/img1.jpg);
+            }
+        }
+
+        .container2 {
+            width: 300px;
+            height: 400px;
+            perspective: 800px;
+        }
+
+        .container2:hover>.card {
+            cursor: pointer;
+            transform: rotateY(180deg);
+        }
+
+        .card {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transition: transform 1500ms;
+            transform-style: preserve-3d;
+        }
+
+        .front,
+        .back {
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+            box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .front {
+            background-image: url(images/falling-dry-yellow-maple-leaves-autumn_116441-2907.avif);
+        }
+
+        .back {
+            background-color: #c2ec6e;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            font-family: "Roboto", "Helvetica", sans-serif;
+        }
+
+        h1 {
+            color: rgb(225, 223, 223);
+            /* White text color for the header */
+            font-size: 30px;
+            /* Larger font size for the header */
+            margin: 0;
+            /* Remove default margin to align header text at the top */
+        }
+
+        h2 {
+            font-size: 25px;
+            line-height: 1.5;
+            color: rgb(246, 246, 246);
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: rgb(243, 255, 255);
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            /* Add rounded corners to images */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins' sans-serif;
+        }
+
+        .gallery {
+            width: 900px;
+            display: flex;
+            overflow-x: scroll;
+        }
+
+        .gallery div {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+            padding: 10px;
+            flex: none;
+
+        }
+
+        .gallery div img {
+            width: 100%;
+            filter: grayscale(100%);
+            transition: transform 0.5s;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            /* Ensure images don't exceed the width of their container */
+            height: auto;
+            /* Maintain aspect ratio */
+
+        }
+
+        .gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10% auto;
+        }
+
+        #backbtn,
+        #nextbtn {
+            width: 50px;
+            cursor: pointer;
+            margin: 40px;
+        }
+
+        .gallery div img:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            /* Vertically align content */
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px #888;
+        }
+
+        img {
+            max-width: 30%;
+            /* Adjust the width percentage as needed */
+            height: auto;
+            margin-right: 30px;
+            /* Create space between the image and text */
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .text {
+            flex: 1;
+            /* Allow the text to expand and take up available space */
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        /* In sheet.css or within a <style> block in the HTML file */
+        #goBackContainer {
+            text-align: center;
+            /* Center the button horizontally */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            /* Optional: Add a background color for better visibility */
+            padding: 10px 0;
+            /* Optional: Add padding for better button appearance */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/Earth.jpg" class="logo" alt="" alt=""
+                            width="80px" height="80px"></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Flora.html">Flora</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Season.html">Seasons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Animal.html">Animal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ocean.html">Ocean</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+            </div>
+        </nav>
+    </header>
+    <!-- nav bar end-->
+
+    <div class="Section_top">
+        <h1 style="text-align: center;"><b><u><strong>AUTUMN</strong></u></b></h1>
+        <div class="gif-container">
+            <img src="images/Fall Autumn GIF.gif" alt="Hello AUTUMN">
+        </div>
+
+        <div class="item">
+            <div class="text">
+                <p>
+                    Autumn is one of the four temperate seasons, following summer and preceding winter. It is
+                    characterized by falling leaves, harvests, and cooler temperatures. In the Northern Hemisphere,
+                    autumn typically begins around September 22nd or 23rd and ends around December 21st or 22nd. During
+                    autumn, plants prepare for dormancy, animals gather food for the winter, and the length of daylight
+                    decreases. It's often associated with the transition from warmth to cold, the bounty of the harvest,
+                    and a sense of coziness as nature prepares for the winter months.
+                </p>
+            </div>
+
+
+            <div class="container2">
+                <div class="card">
+                    <div class="front"></div>
+                    <div class="back">
+                        <div class="text">
+                            <h3><b><u>🍂Autumn Falling Leafs 🍂</u></b></h3>
+                            <p>Autumn is characterized by the iconic sight of falling leaves, a feature
+                                of the season. As temperatures cool and daylight diminishes, deciduous trees shed their
+                                leaves, painting the landscape in hues of red, orange, yellow, and brown. The falling
+                                leaves symbolize the seasonal transition, marking the end of growth and the onset of
+                                dormancy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-box-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video_css">
+                            <video controls autoplay loop src="images/autumn.mp4" type="video/mp4" width="500px">
+                                Sry your browser does not support
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="noo-sh-title-top"><u><span>🍁 DISCOVER THE MAGIC OF AUTUMN 🍁</u></span></h2>
+                        <p>Experience the richness of autumn with us! We bring you the finest seasonal treasures from
+                            local markets straight to your door through premier delivery services. Whether adjusting to
+                            safety protocols or managing remote work, let us handle your autumn dining needs seamlessly.
+                            Embrace the flavors of the season effortlessly!
+                        </p>
+                        <p>Amidst the falling leaves and crisp air of autumn, allow us to streamline your dining
+                            choices. Whether navigating changing regulations or adapting to work-from-home schedules,
+                            rely on us for culinary support. Embrace the warmth and comfort of autumn effortlessly!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-block-inner">
+                            <h3>Nature's Embrace</h3>
+                            <p>Our platform embodies the embrace of autumn's beauty, reflecting the steadfastness and
+                                authenticity found in every aspect of our service.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-block-inner">
+                            <h3>Effortless Charm</h3>
+                            <p>Experience the charm of autumn's grace, where every interaction flows with ease and
+                                simplicity.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service-block-inner">
+                            <h3>Harvested Wisdom</h3>
+                            <p>Our platform is cultivated with wisdom akin to the bountiful harvest of autumn, nurtured
+                                by experienced hands.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 style="text-align: center;"><b><u>Popular Activities During Autumn</u></b></h1>
+            <h3 style="text-align: center;">
+                <p>Here are some pictures and introduction that related to the activities can held during 🍂Autumn!!!
+                </p>
+
+                <div class="gallery-wrap">
+                    <img src="images/back.png" id="backbtn">
+                    <div class="gallery">
+                        <div>
+                            <span><img src="images/Hero-Image.jpg"></span>
+                            <span><img src="images/caption.jpg"></span>
+
+                        </div>
+                        <div>
+
+                            <span><img
+                                    src="images/cozy-crackling-bonfire-chilly-autumn-evening-surrounded-by-friends-family_971975-2488.avif"></span>
+                            <span><img src="images/maxresdefault.jpg"></span>
+                        </div>
+                        <div>
+                            <span><img src="images/GettyImages-1431335872.webp"></span>
+                            <span><img src="images/strawbalewineryharvestfest0089opt.jpg"></span>
+                        </div>
+
+                    </div>
+                    <img src="images/next.png" id="nextbtn">
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h2><strong>Autumn Hike:</strong></h2>
+                        <br>
+                        <p>Embrace the crisp air and vibrant foliage of autumn with invigorating hikes through scenic
+                            trails.
+                            Venture into the heart of nature's colorful palette as you trek along paths adorned with
+                            golden leaves
+                            and rustic hues. Pack a picnic of hearty seasonal fare like warm soups, crusty bread, and
+                            freshly
+                            harvested apples to enjoy amidst the breathtaking scenery. Listen to the crunch of fallen
+                            leaves underfoot
+                            and breathe in the earthy aroma of the forest as you explore the wonders of autumn.
+                        </p>
+                        <br>
+                        <h2><strong>Cozy Bonfire Night:</strong></h2>
+                        <br>
+                        <p>Gather around a crackling bonfire on cool autumn evenings and bask in the warmth of
+                            flickering flames
+                            with loved ones. Roast marshmallows to perfection and savor gooey s'mores while sharing
+                            stories and
+                            laughter under the starry sky. As the air grows crisper, wrap up in blankets and relish the
+                            cozy
+                            atmosphere created by the dancing firelight. It's a perfect opportunity to reconnect with
+                            nature and
+                            cherish the simple pleasures of autumn nights.
+                        </p>
+                        <br>
+                        <h2><strong>Harvest Festival:</strong></h2>
+                        <br>
+                        <p>Celebrate the abundance of autumn with festive harvest gatherings and local fairs. Join in
+                            the
+                            festivities as communities come together to showcase the season's bounty of fresh produce,
+                            artisanal
+                            crafts, and culinary delights. Enjoy live music, hayrides, and pumpkin carving contests
+                            while
+                            immersing yourself in the vibrant colors and flavors of autumn. It's a time to embrace the
+                            spirit
+                            of gratitude and appreciation for nature's gifts as you revel in the joyous ambiance of the
+                            harvest
+                            season.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="categories-earth">
+                    <div class="container">
+                        <div class="text">
+                            <h1><u><strong>🍂 Autumn Adventures Await! Join Us for Outdoor Excitement! 🍂</u></strong>
+                            </h1>
+                            <p>Greetings, outdoor enthusiasts! Ready to immerse yourself in the enchanting beauty of
+                                autumn? In our upcoming guide, we've handpicked three captivating activities to fully
+                                embrace this cozy season. From scenic hikes through fiery foliage to invigorating apple
+                                picking adventures, there's an experience tailored just for you. Additionally, we'll
+                                unveil charming destinations like pumpkin patches and harvest festivals, brimming with
+                                the rich colors and flavors of autumn. Don't miss out on autumn's allure—click below to
+                                discover more captivating autumn-related destinations! 🍁🎃🍂
+                            </p>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="shop-cat-box">
+                                    <img class="img-fluid" src="images/caption.jpg" alt="Autumn Hike" />
+                                    <a class="btn hvr-hover"
+                                        href="https://www.realsimple.com/work-life/entertainment/fall-activities">Autumn
+                                        Hike</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="shop-cat-box">
+                                    <img class="img-fluid" src="images/maxresdefault.jpg" alt="Cozy Bonfire Night" />
+                                    <a class="btn hvr-hover"
+                                        href="https://www.oprahdaily.com/life/g28340277/fun-fall-activities/">Cozy
+                                        Bonfire Night</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="shop-cat-box">
+                                    <img class="img-fluid" src="images/GettyImages-1431335872.webp"
+                                        alt="Harvest Festival" />
+                                    <a class="btn hvr-hover"
+                                        href="https://www.housebeautiful.com/lifestyle/g44233866/fall-activities-ideas/">
+                                        Harvest Festival</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+                <section>
+                    <!-- "Go Back" button wrapped in a <div> for positioning -->
+                    <div id="goBackContainer">
+                        <button id="goBackButton">Go Back</button>
+                    </div>
+                </section>
+
+                <div class="elfsight-app-871c8141-9444-4a50-8c8c-45730388dd0e" data-elfsight-app-lazy></div>
+                <!-- ALL JS FILES -->
+                <script src="js/jquery-3.5.1.min.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <!-- ALL PLUGINS -->
+                <script src="js/jquery.superslides.min.js"></script>
+                <script src="js/bootstrap-select.js"></script>
+                <script src="js/inewsticker.js"></script>
+                <script src="js/bootsnav.js."></script>
+                <script src="js/images-loded.min.js"></script>
+                <script src="js/isotope.min.js"></script>
+                <script src="js/owl.carousel.min.js"></script>
+                <script src="js/baguetteBox.min.js"></script>
+                <script src="js/form-validator.min.js"></script>
+                <script src="js/contact-form-script.js"></script>
+                <script src="js/custom.js"></script>
+                <script src="js/googlemap.js"></script>
+                <script defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj2x4PwmyJAece5Qvh7vY2pNiaRuDsELk&callback=initMap"></script>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <script src="script.js">
+                </script>
+
+</body>

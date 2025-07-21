@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap version v5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="amphibianstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> <!--style-->
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Merienda:wght@300..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .nav-link:hover,
+        .nav-link:active,
+        .nav-link.active {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="animal.images/background2.mp4" type="video/mp4">
+        <!-- Add more <source> elements for different video formats -->
+    </video>
+    <!-- nav bar start-->
+    <div style="background-color: aliceblue">
+        <header class="d-flex flex-wrap align-items-center justify-content-between py-3 ">
+            <div class="col-md-3 mb-2 mb-md-0 order-md-first ps-md-3">
+                <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img style="height: 80px;width: 80px;" src="images/Earth.jpg" class="rounded">
+                </a>
+            </div>
+            <div class="col-7">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ps-md-3">
+                    <li><a href="index.html" class="nav-link px-2 link-secondary fs-5 me-md-4 text-black">Home</a>
+                    </li>
+                    <li><a href="Flora.html" class="nav-link active px-2 fs-5 me-md-4 text-black">Flora</a></li>
+                    <li><a href="Season.html" class="nav-link px-2 fs-5 me-md-4 text-black">Seasons</a></li>
+                    <li><a href="Animal.html" class="nav-link px-2 fs-5 me-md-4 text-black">Animal</a></li>
+                    <li><a href="ocean.html" class="nav-link px-2 fs-5 text-black">Ocean</a></li>
+                </ul>
+            </div>
+
+        </header>
+    </div>
+
+    <!-- intro content -->
+    <div class="intro-container">
+        <div class="intro-desc"> <!--left side-->
+
+            <h1>The Amphibians</h1>
+
+            <p>Amphibians are a diverse group of cold-blooded vertebrates belonging to the class Amphibia. They
+                typically undergo
+                metamorphosis, transitioning from aquatic larvae to terrestrial adults. Amphibians include frogs, toads,
+                salamanders,
+                newts, and caecilians.These creatures are found in a wide range of habitats worldwide, from tropical
+                rainforests and
+                freshwater ponds to deserts and high-altitude mountain streams. Many amphibians have permeable skin,
+                allowing them to
+                absorb oxygen and moisture directly from their environment, which makes them sensitive to changes in
+                habitat quality
+                and pollution. Amphibians are vital components of ecosystems, serving as both predators and prey and
+                contributing to
+                nutrient cycling. They play important roles in controlling insect populations, serving as indicators of
+                environmental
+                health, and functioning as bioindicators for water quality.
+            </p>
+        </div>
+
+        <div class="intro-picture"> <!--right side-->
+            <img src="animal.images/animal.jpg">
+        </div>
+
+    </div>
+
+    <!-- nav bar end-->
+
+    <!-- -----------------------------------------------------The Frog ----------------------------------------------------------->
+    <div class="imgbody">
+
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="frog-radio-btn" id="frog_radio1">
+                <input type="radio" name="frog-radio-btn" id="frog_radio2">
+                <input type="radio" name="frog-radio-btn" id="frog_radio3">
+                <input type="radio" name="frog-radio-btn" id="frog_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/fo1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/fo2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/fo3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/fo4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+
+
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="frog_radio1" class="manual-btn"></label>
+                <label for="frog_radio2" class="manual-btn"></label>
+                <label for="frog_radio3" class="manual-btn"></label>
+                <label for="frog_radio4" class="manual-btn"></label>
+
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Frog</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Frogs are amphibians belonging to the order Anura, which includes over 7,000 species found
+                    worldwide. They are
+                    characterized by their long hind legs adapted for jumping, webbed feet for swimming, and smooth,
+                    moist skin. Frogs
+                    typically have bulging eyes and a wide mouth, and many species have vocal sacs used for calling
+                    during mating.
+                    These amphibians are found in a variety of habitats, including forests, grasslands, wetlands, and
+                    even urban
+                    areas. They play crucial roles in ecosystems as both predators and prey, feeding on insects, worms,
+                    and other
+                    small invertebrates, while also serving as food for birds, snakes, and mammals.Reproduction in frogs
+                    usually
+                    involves external fertilization, with females laying eggs in water and males fertilizing them
+                    externally. Frog eggs
+                    hatch into aquatic tadpoles, which undergo metamorphosis into terrestrial adults. This
+                    transformation involves the
+                    development of limbs, the loss of the tail, and changes to the respiratory and circulatory systems.
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- -----------------------------------------------------The Salamander ----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="sal-radio-btn" id="sal_radio1">
+                <input type="radio" name="sal-radio-btn" id="sal_radio2">
+                <input type="radio" name="sal-radio-btn" id="sal_radio3">
+                <input type="radio" name="sal-radio-btn" id="sal_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/sal1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/sal2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/sal3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/sal4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="sal_radio1" class="manual-btn"></label>
+                <label for="sal_radio2" class="manual-btn"></label>
+                <label for="sal_radio3" class="manual-btn"></label>
+                <label for="sal_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Salamander</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Salamanders are amphibians belonging to the order Caudata. They are characterized by their long
+                    bodies, short legs,
+                    and long tails, with some species possessing four equal-sized limbs while others have reduced or
+                    even no limbs.
+                    Salamanders have smooth, moist skin and are typically found in damp or aquatic habitats, such as
+                    forests, streams,
+                    and wetlands.These amphibians come in a variety of sizes, ranging from small, slender species to
+                    large,
+                    robust ones. Many salamanders have vibrant colors or patterns, which may serve as warning signals or
+                    camouflage.
+                    Salamanders are carnivorous, feeding on insects, worms, small vertebrates, and other invertebrates.
+                    They are
+                    primarily nocturnal, hunting for prey under cover of darkness.Reproduction in salamanders varies
+                    among species,
+                    with many laying eggs in water, while others give birth to live young or use internal fertilization.
+                    Some species exhibit complex courtship rituals, involving visual displays, chemical cues, or
+                    vocalizations.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- -----------------------------------------------------The Caecilian ----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="cae-radio-btn" id="cae_radio1">
+                <input type="radio" name="cae-radio-btn" id="cae_radio2">
+                <input type="radio" name="cae-radio-btn" id="cae_radio3">
+                <input type="radio" name="cae-radio-btn" id="cae_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/ca1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/ca2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/ca3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/ca4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="cae_radio1" class="manual-btn"></label>
+                <label for="cae_radio2" class="manual-btn"></label>
+                <label for="cae_radio3" class="manual-btn"></label>
+                <label for="cae_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Caecilians</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Caecilians are amphibians, but they are distinct from frogs, toads, salamanders, and newts. They
+                    belong to the order
+                    Gymnophiona and are often lesser-known compared to other amphibians. Caecilians are limbless and
+                    elongated,
+                    resembling earthworms or snakes, with a smooth, moist, and sometimes translucent skin.These
+                    fascinating creatures
+                    are found in tropical regions worldwide, primarily in damp habitats such as forests, soil, and
+                    streams. Caecilians
+                    are predominantly fossorial, spending much of their time burrowing underground or in leaf litter.
+                    They possess
+                    sensory tentacles near their nostrils, which they use to detect prey.Caecilians are carnivorous,
+                    feeding on small
+                    invertebrates like earthworms, insects, and other soil-dwelling organisms. Reproduction in
+                    caecilians often
+                    involves internal fertilization, and some species give birth to live young, while others lay eggs in
+                    moist
+                    environments.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+
+    <!-- -----------------------------------------------------The Newt ----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="new-radio-btn" id="new_radio1">
+                <input type="radio" name="new-radio-btn" id="new_radio2">
+                <input type="radio" name="new-radio-btn" id="new_radio3">
+                <input type="radio" name="new-radio-btn" id="new_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/nw1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/nw2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/nw3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/nw4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="new_radio1" class="manual-btn"></label>
+                <label for="new_radio2" class="manual-btn"></label>
+                <label for="new_radio3" class="manual-btn"></label>
+                <label for="new_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Newt</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Newts are amphibians belonging to the family Salamandridae, which also includes salamanders. They
+                    are typically
+                    characterized by their smooth, moist skin and long, slender bodies with four legs. Newts have a
+                    distinctive life
+                    cycle, undergoing metamorphosis from aquatic larvae to terrestrial adults, similar to frogs and
+                    toads.These
+                    amphibians are found in a variety of habitats, including forests, grasslands, ponds, and streams,
+                    across Europe,
+                    Asia, and North America. They are often associated with freshwater environments, where they spend
+                    much of their
+                    time hunting for prey and breeding.Newts are carnivorous, feeding primarily on small invertebrates
+                    such as
+                    insects, worms, and crustaceans. Some species are known to possess toxins in their skin, which they
+                    use as a
+                    defense mechanism against predators.
+                </p>
+
+                <br><br><br>
+                <!---------------------Video iframe  --------------------------------->
+                <div class="video-container">
+                    <iframe width="100%" height="500"
+                        src="https://www.youtube.com/embed/t-5XXlqL1O4?si=CEdvpchooMjZXUdL" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                         gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                </div>
+                <br><br><br>
+                <!--------------------------------Button----------------------------------->
+                <div class="container mt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <!-- Previous Button  -->
+                            <a href="Reptiles.html" class="btn custom-btn prev-btn">&laquo; Previous</a>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Next Button  -->
+                            <a href="Animal.html" class="btn custom-btn next-btn">Next &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- scripting for img automation -->
+    <script>
+        //frog slider
+        var frogcount = 1;
+        setInterval(function () {
+            document.getElementById('frog_radio' + frogcount).checked = true;
+            frogcount++;
+            if (frogcount > 4) {
+                frogcount = 1;
+            }
+        }, 5000);
+
+        // Salamander Slider
+        var salcount = 1;
+        setInterval(function () {
+            document.getElementById('sal_radio' + salcount).checked = true;
+            salcount++;
+            if (salcount > 4) {
+                salcount = 1;
+            }
+        }, 5000);
+
+        // Caecilian Slider
+        var caecount = 1;
+        setInterval(function () {
+            document.getElementById('cae_radio' + caecount).checked = true;
+            caecount++;
+            if (caecount > 4) {
+                caecount = 1;
+            }
+        }, 5000);
+
+        // Newt Slider
+        var newcount = 1;
+        setInterval(function () {
+            document.getElementById('new_radio' + newcount).checked = true;
+            newcount++;
+            if (newcount > 4) {
+                newcount = 1;
+            }
+        }, 5000);
+    </script>
+
+
+</body>
+
+</html>

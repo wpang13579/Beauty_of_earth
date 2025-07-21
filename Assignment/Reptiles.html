@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap version v5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="reptilestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> <!--style-->
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Merienda:wght@300..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .nav-link:hover,
+        .nav-link:active,
+        .nav-link.active {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="animal.images/background2.mp4" type="video/mp4">
+        <!-- Add more <source> elements for different video formats -->
+    </video>
+    <!-- nav bar start-->
+    <div style="background-color: aliceblue">
+        <header class="d-flex flex-wrap align-items-center justify-content-between py-3 ">
+            <div class="col-md-3 mb-2 mb-md-0 order-md-first ps-md-3">
+                <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img style="height: 80px;width: 80px;" src="images/Earth.jpg" class="rounded">
+                </a>
+            </div>
+            <div class="col-7">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ps-md-3">
+                    <li><a href="index.html" class="nav-link px-2 link-secondary fs-5 me-md-4 text-black">Home</a>
+                    </li>
+                    <li><a href="Flora.html" class="nav-link active px-2 fs-5 me-md-4 text-black">Flora</a></li>
+                    <li><a href="Season.html" class="nav-link px-2 fs-5 me-md-4 text-black">Seasons</a></li>
+                    <li><a href="Animal.html" class="nav-link px-2 fs-5 me-md-4 text-black">Animal</a></li>
+                    <li><a href="ocean.html" class="nav-link px-2 fs-5 text-black">Ocean</a></li>
+                </ul>
+            </div>
+
+        </header>
+    </div>
+
+    <!-- intro content -->
+    <div class="intro-container">
+        <div class="intro-desc"> <!--left side-->
+
+            <h1>The Reptiles</h1>
+
+            <p>
+                Reptiles are a diverse group of cold-blooded vertebrates characterized by their dry, scaly skin and
+                reliance on external sources
+                of heat for regulating body temperature. They include various species of snakes, lizards, turtles,
+                crocodiles, and tuatara.
+                Reptiles inhabit a wide range of ecosystems worldwide, from deserts and grasslands to forests and
+                wetlands.These animals are
+                ectothermic, meaning they rely on external environmental conditions to regulate their body temperature.
+                Many reptiles bask in
+                the sun or seek out warm areas to raise their body temperature and become more active.
+            </p>
+        </div>
+
+        <div class="intro-picture"> <!--right side-->
+            <img src="animal.images/animal.jpg">
+        </div>
+
+    </div>
+
+    <!-- nav bar end-->
+
+    <!-- -----------------------------------------------------The Snake ----------------------------------------------------------->
+    <div class="imgbody">
+
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="sna-radio-btn" id="sna_radio1">
+                <input type="radio" name="sna-radio-btn" id="sna_radio2">
+                <input type="radio" name="sna-radio-btn" id="sna_radio3">
+                <input type="radio" name="sna-radio-btn" id="sna_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/sna1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/sna2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/sna3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/sna4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+
+
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="sna_radio1" class="manual-btn"></label>
+                <label for="sna_radio2" class="manual-btn"></label>
+                <label for="sna_radio3" class="manual-btn"></label>
+                <label for="sna_radio4" class="manual-btn"></label>
+
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Snake</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Snakes are elongated, legless reptiles belonging to the suborder Serpentes. They are found on every
+                    continent except
+                    Antarctica and inhabit a wide range of environments, from deserts and forests to grasslands and
+                    aquatic habitats.
+                    Snakes vary greatly in size, from tiny threadsnakes measuring a few inches to large constrictors
+                    like the
+                    reticulated python and anaconda, which can exceed 20 feet in length.These remarkable animals are
+                    known for their
+                    flexible bodies, covered in scales, and their unique method of locomotion, which involves the
+                    coordination of
+                    muscles and scales to propel themselves forward. Snakes are carnivorous, feeding primarily on
+                    rodents, birds,
+                    amphibians, and other reptiles. Some species are venomous, using specialized fangs to inject venom
+                    into their
+                    prey for subduing or digesting.
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- -----------------------------------------------------The Crocodile ----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="cro-radio-btn" id="cro_radio1">
+                <input type="radio" name="cro-radio-btn" id="cro_radio2">
+                <input type="radio" name="cro-radio-btn" id="cro_radio3">
+                <input type="radio" name="cro-radio-btn" id="cro_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/cro 1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/cro 2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/cro 3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/cro 4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="cro_radio1" class="manual-btn"></label>
+                <label for="cro_radio2" class="manual-btn"></label>
+                <label for="cro_radio3" class="manual-btn"></label>
+                <label for="cro_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Crocodile</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Crocodiles are large, aquatic reptiles belonging to the family Crocodylidae. They are found in
+                    tropical and
+                    subtropical regions across Africa, Asia, the Americas, and Australia. Known for their formidable
+                    appearance and
+                    powerful jaws, crocodiles are apex predators in their ecosystems, playing crucial roles in
+                    maintaining the balance
+                    of aquatic food chains.These reptiles have armored bodies covered in thick scales and powerful tails
+                    for swimming.
+                    They are semi-aquatic, inhabiting freshwater habitats such as rivers, lakes, marshes, and estuaries.
+                    Crocodiles are
+                    also capable of surviving in saltwater environments, and some species, like the saltwater crocodile,
+                    are known to
+                    venture into coastal areas and even open ocean.Crocodiles are carnivorous, feeding on a variety of
+                    prey including
+                    fish, birds, mammals, and other reptiles. They are ambush predators, using stealth and patience to
+                    capture their
+                    prey, often lying in wait near the water's edge before launching a swift and powerful attack.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <!-- -----------------------------------------------------The Lizards ----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="liz-radio-btn" id="liz_radio1">
+                <input type="radio" name="liz-radio-btn" id="liz_radio2">
+                <input type="radio" name="liz-radio-btn" id="liz_radio3">
+                <input type="radio" name="liz-radio-btn" id="liz_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/liz1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/liz2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/liz3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/liz4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="liz_radio1" class="manual-btn"></label>
+                <label for="liz_radio2" class="manual-btn"></label>
+                <label for="liz_radio3" class="manual-btn"></label>
+                <label for="liz_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Lizards</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Lizards are a diverse group of reptiles belonging to the order Squamata, which also includes snakes.
+                    They are found
+                    in a variety of habitats worldwide, ranging from deserts and forests to grasslands and urban areas.
+                    Lizards come in
+                    various sizes, shapes, and colors, with over 6,000 species identified to date.These reptiles are
+                    characterized by
+                    their scaly skin, elongated bodies, and typically four legs, although some species are legless or
+                    have reduced
+                    limbs. Lizards have a wide range of adaptations, from camouflage and defensive behaviors like tail
+                    autotomy
+                    (self-amputation of the tail) to specialized features like adhesive toe pads in geckos for climbing
+                    vertical
+                    surfaces.Lizards are ectothermic, meaning they rely on external sources of heat to regulate their
+                    body temperature.
+                    Many species are active during the day (diurnal), while others are active at night (nocturnal) or
+                    during twilight
+                    hours (crepuscular).
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+
+    <!-- -----------------------------------------------------The Tortoises----------------------------------------------------------->
+    <div class="imgbody">
+        <!-- image slider start -->
+        <div class="imgslider">
+            <div class="imgslides">
+                <!-- button start -->
+                <input type="radio" name="tor-radio-btn" id="tor_radio1">
+                <input type="radio" name="tor-radio-btn" id="tor_radio2">
+                <input type="radio" name="tor-radio-btn" id="tor_radio3">
+                <input type="radio" name="tor-radio-btn" id="tor_radio4">
+                <!-- button end -->
+
+
+                <!-- image slide start -->
+                <div class="slide first">
+                    <img src="animal.images/tor1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/tor2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/tor3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="animal.images/tor4.jpg" alt="">
+                </div>
+                <!-- image slide end -->
+
+
+                <!-- automation slide start-->
+                <div class="img-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automation slide end -->
+            </div>
+            <!-- manual slide start -->
+            <div class="img-manual">
+                <label for="tor_radio1" class="manual-btn"></label>
+                <label for="tor_radio2" class="manual-btn"></label>
+                <label for="tor_radio3" class="manual-btn"></label>
+                <label for="tor_radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual slide end -->
+
+
+            <!-- image slider end -->
+            <div class="contentposition">
+                <h1 class="text-center">The Tortoises</h1>
+                <p style="border-style: solid; padding:20px;">
+                    Tortoises are land-dwelling reptiles belonging to the order Testudines. They are characterized by
+                    their distinctive
+                    shells, which consist of a top carapace and a bottom plastron, fused to their ribs and spine,
+                    providing protection
+                    from predators. Unlike turtles, tortoises are adapted for life on land and have sturdy,
+                    elephant-like legs with
+                    columnar feet suited for walking on land rather than swimming.Tortoises are found in various
+                    habitats worldwide,
+                    including deserts, grasslands, scrublands, and forests. They are herbivores, feeding on a diet
+                    consisting mainly
+                    of grasses, leaves, fruits, and flowers. Due to their slow metabolism, tortoises can survive for
+                    long periods
+                    without food or water.These reptiles have a long lifespan, with some species living well over 100
+                    years.
+                    They are known for their slow and deliberate movements, often symbolizing patience and longevity.
+                </p>
+                <br><br><br>
+                <!---------------------Video iframe  --------------------------------->
+                <div class="video-container">
+                    <iframe width="100%" height="500"
+                        src="https://www.youtube.com/embed/el4CQj-TCbA?si=wWidq3Q_R0HAA4xx" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                          gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                </div>
+                <br><br><br>
+                <!---------------------Button  --------------------------------->
+                <div class="container mt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <!-- Previous Button  -->
+                            <a href="Birds.html" class="btn custom-btn prev-btn">&laquo; Previous</a>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Next Button  -->
+                            <a href="Amphibians.html" class="btn custom-btn next-btn">Next &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br>
+
+
+    <!-- scripting for img automation -->
+    <script type="text/javascript">
+        // Snake Slider
+        var snacount = 1;
+        setInterval(function () {
+            document.getElementById('sna_radio' + snacount).checked = true;
+            snacount++;
+            if (snacount > 4) {
+                snacount = 1;
+            }
+        }, 5000);
+
+        // Crocodile Slider
+        var crocount = 1;
+        setInterval(function () {
+            document.getElementById('cro_radio' + crocount).checked = true;
+            crocount++;
+            if (crocount > 4) {
+                crocount = 1;
+            }
+        }, 5000);
+
+        // Lizard Slider
+        var lizcount = 1;
+        setInterval(function () {
+            document.getElementById('liz_radio' + lizcount).checked = true;
+            lizcount++;
+            if (lizcount > 4) {
+                lizcount = 1;
+            }
+        }, 5000);
+
+        // Tortoise Slider
+        var torcount = 1;
+        setInterval(function () {
+            document.getElementById('tor_radio' + torcount).checked = true;
+            torcount++;
+            if (torcount > 4) {
+                torcount = 1;
+            }
+        }, 5000);
+    </script>
+
+
+</body>
+
+</html>

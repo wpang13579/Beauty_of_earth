@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contentContainer{
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.one{
+    background-color:rgb(10, 122, 104);
+}
+.two{
+    background-color:rgb(3, 61, 8);
+}
+.three{
+    background-color: rgb(73, 37, 8);
+}
+
+.S_introContainer{
+    position: relative;
+    align-items: center;
+    background-color: rgb(10, 122, 104);
+    height: 100vh; /* Sets the height of the container */
+}
+
+.S_introLeft{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.S_introRight{
+    flex: 1;
+    padding: 0 30px; /* Add some padding for spacing between image and text */
+    line-height: 2.0; /* Increase the line height */
+
+
+}

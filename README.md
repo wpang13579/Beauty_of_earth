@@ -1,12 +1,26 @@
-A static HTML/CSS website showcasing the beauty of nature through categorized content about flora, fauna, and environment.
+# 🌿 The Beauty of Earth Website
 
-🌱 Features
-Multiple HTML pages (birds, mammals, flora, ocean, etc.)
-CSS styling for each category
-Image folders and media content
+A static HTML/CSS website showcasing the beauty of nature through categorized content about flora, fauna, and the environment.
 
-📂 Tech Used
-HTML5
-CSS
-JavaScript
-Bootstraps
+---
+
+## ✨ Features
+
+- 📄 Multiple categorized HTML pages:
+  - Birds
+  - Mammals
+  - Flora
+  - Ocean
+  - Environment
+- 🎨 CSS styling for each category
+- 🖼️ Media folders for images and videos
+- 📁 Organized content layout for easy navigation
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap

@@ -18,7 +18,7 @@ A static HTML/CSS website showcasing the beauty of nature through categorized co
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Using
 
 - HTML5
 - CSS3
